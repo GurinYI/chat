@@ -1,15 +1,19 @@
 {
-  "name": "vite-project",
+  "name": "chat",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite dist",
     "preview": "vite preview"
   },
   "devDependencies": {
     "sass": "^1.69.5",
     "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "prettier": "^3.1.0",
+    "vite-plugin-handlebars": "^1.6.0"
   }
 }
