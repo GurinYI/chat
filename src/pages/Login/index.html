@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{{#> page/page title="Login"}}
+    <link rel="stylesheet" href="page-login.scss" />
+        {{#> form/form class="page_login page__center" header="Вход" h2=true}}
+            {{#> input/input type="text" id="inputLogin" placeholder="Логин"}}{{/input/input}}
+            {{#> input/input type="password" id="inputPassword" placeholder="Пароль"}}{{/input/input}}
+            {{#> button/button class="form__button" label="Авторизоваться"}}{{/button/button}}
+            {{#> link/link class="form__link" href="/pages/Signin/index.html"}}Нет аккаунта?{{/link/link}}
+        {{/form/form}}
+{{/page/page}}

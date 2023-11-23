@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{{#> page/page title="Signin"}}
+    <link rel="stylesheet" href="page-signin.scss" />
+    {{#> form/form class="page_signin page__center" header="Регистрация" h2=true}}
+        {{#> input/input type="email" placeholder="Почта"}}{{/input/input}}
+        {{#> input/input type="text" placeholder="Логин"}}{{/input/input}}
+        {{#> input/input type="text" placeholder="Имя"}}{{/input/input}}
+        {{#> input/input type="text" placeholder="Фамилия"}}{{/input/input}}
+        {{#> input/input type="tel" placeholder="Телефон"}}{{/input/input}}
+        {{#> input/input type="password" placeholder="Пароль"}}{{/input/input}}
+        {{#> input/input type="password" placeholder="Пароль (ещё раз)"}}{{/input/input}}
+        {{#> button/button class="form__button" label="Зарегистрироваться"}}{{/button/button}}
+        {{#> link/link class="form__link" href="/pages/Login/index.html"}}Войти{{/link/link}}
+    {{/form/form}}
+{{/page/page}}

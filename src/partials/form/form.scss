@@ -1,0 +1,26 @@
+.form {
+  width: 17.710%;
+  border-radius: 12px;
+  box-shadow: 0 0 6px 0 #00000024;
+  padding: 50px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  &__header {
+    margin-bottom: 50px;
+  }
+  &__button {
+    width: 100%;
+    margin-bottom: 14px;
+    margin-top: auto;
+  }
+  &__link{
+    font-size: 11px;
+    line-height: 11px;
+  }
+
+  &__modal{
+    padding: 40px 30px;
+  }
+}

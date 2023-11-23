@@ -1,0 +1,32 @@
+{{#> page/page title="Modals"}}
+    <link rel="stylesheet" href="modals.scss" />
+    <main class="modals">
+
+        {{#> form/form header="Добавить пользователя" class="form__modal"}}
+            {{#> input/input type="text" placeholder="Логин"}}{{/input/input}}
+            {{#> button/button class="form__button" label="Добавить"}}{{/button/button}}
+        {{/form/form}}
+
+        {{#> form/form header="Удалить пользователя" class="form__modal"}}
+            {{#> input/input type="text" placeholder="Логин"}}{{/input/input}}
+            {{#> button/button class="form__button" label="Удалить"}}{{/button/button}}
+        {{/form/form}}
+
+        {{#> form/form header="Файл загружен" class="form__modal modal_upload"}}
+            <span class="modal_upload__chosen_file">pic.jpg</span>
+            {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
+        {{/form/form}}
+
+        {{#> form/form header="Загрузите файл" class="form__modal modal_upload"}}
+            {{#> link/link href="#" class="link--underline modal_upload__choose_file"}}Выбрать файл на компьютере{{/link/link}}
+            {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
+            <span class="modal_upload__message">Нужно выбрать файл</span>
+        {{/form/form}}
+
+        {{#> form/form header="Ошибка, попробуйте ещё раз" class="form__modal modal_upload modal_error"}}
+            {{#> link/link href="#" class="link--underline modal_upload__choose_file"}}Выбрать файл на компьютере{{/link/link}}
+            {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
+        {{/form/form}}
+
+    </main>
+{{/page/page}}

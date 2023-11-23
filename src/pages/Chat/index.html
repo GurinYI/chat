@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{{#> page/page title="chat"}}
+    <link rel="stylesheet" href="chat.scss" />
+    <main class="page__center page_chat">
+        {{#> headers/h1 class="page_500__title"}}500{{/headers/h1}}
+        {{#> headers/h2 class="page_500__message"}}Мы уже фиксим{{/headers/h2}}
+        {{#> link/link href="/"}}Назад к чатам {{/link/link}}
+    </main>
+{{/page/page}}

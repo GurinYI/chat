@@ -1,0 +1,15 @@
+@import "src/styles/colors";
+.link{
+  text-decoration: none;
+  color:$color-blue;
+
+  &:hover{
+    text-decoration: underline;
+  }
+  &--underline{
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
