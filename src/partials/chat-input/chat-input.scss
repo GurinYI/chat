@@ -1,0 +1,30 @@
+@import "/styles/colors";
+.chat_input{
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid $color-gray-4;
+  padding-top: 10px;
+  &__add_file{
+    margin-right:10px;
+    cursor: pointer;
+  }
+  &__message{
+    background-color: $color-gray-4;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%
+  }
+  &__send{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background-color: #3369f3;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 10px;
+  }
+}

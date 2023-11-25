@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/partials/chats/chats.scss" />
+<aside class="chats">
+    <div class="chats__interface">
+        {{#> link/link href="/" class="link--gray"}}Профиль >{{/link/link}}
+        {{#> search/search href="/"}}Поиск >{{/search/search}}
+
+    </div>
+    {{#if chats.length}}
+        <ul class="chats__list">
+        {{#each chats}}
+            {{#> chat-item/chat-item chat=this}}{{/chat-item/chat-item}}
+        {{/each}}
+        </ul>
+    {{/if}}
+
+</aside>

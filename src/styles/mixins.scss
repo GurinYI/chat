@@ -1,0 +1,13 @@
+@mixin center{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+@mixin scrollable{
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

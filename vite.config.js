@@ -1,6 +1,7 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 import handlebars from "vite-plugin-handlebars";
+import {chats} from "./src/mocked-data/chats.js";
 
 export default defineConfig({
   root: resolve(__dirname, "src"),
@@ -16,7 +17,8 @@ export default defineConfig({
     handlebars({
       partialDirectory: resolve(__dirname, "src/partials"),
       context: {
-        username: "John Doe",
+        chats: chats,
+        activeChat: chats[0]
       },
     }),
   ],

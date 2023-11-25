@@ -1,5 +1,5 @@
 @import "/styles/colors";
-.input_container{
+.form_input_container{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
   }
 }
 
-.input_container input:focus + .input_container__placeholder {
+.form_input_container input:focus + .form_input_container__placeholder {
   transform: translateY(-20px);
   font-size: 9px;
 }

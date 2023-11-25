@@ -1,13 +1,14 @@
 {{#> page/page title="Signin"}}
     <link rel="stylesheet" href="page-signin.scss" />
     {{#> form/form class="page_signin page__center" header="Регистрация" h2=true}}
-        {{#> input/input type="email" placeholder="Почта"}}{{/input/input}}
-        {{#> input/input type="text" placeholder="Логин"}}{{/input/input}}
-        {{#> input/input type="text" placeholder="Имя"}}{{/input/input}}
-        {{#> input/input type="text" placeholder="Фамилия"}}{{/input/input}}
-        {{#> input/input type="tel" placeholder="Телефон"}}{{/input/input}}
-        {{#> input/input type="password" placeholder="Пароль"}}{{/input/input}}
-        {{#> input/input type="password" placeholder="Пароль (ещё раз)"}}{{/input/input}}
+        {{#> headers/h2 class="form__header"}}{{header}}{{/headers/h2}}
+        {{#> form-input/form-input type="email" placeholder="Почта"}}{{/form-input/form-input}}
+        {{#> form-input/form-input type="text" placeholder="Логин"}}{{/form-input/form-input}}
+        {{#> form-input/form-input type="text" placeholder="Имя"}}{{/form-input/form-input}}
+        {{#> form-input/form-input type="text" placeholder="Фамилия"}}{{/form-input/form-input}}
+        {{#> form-input/form-input type="tel" placeholder="Телефон"}}{{/form-input/form-input}}
+        {{#> form-input/form-input type="password" placeholder="Пароль"}}{{/form-input/form-input}}
+        {{#> form-input/form-input type="password" placeholder="Пароль (ещё раз)"}}{{/form-input/form-input}}
         {{#> button/button class="form__button" label="Зарегистрироваться"}}{{/button/button}}
         {{#> link/link class="form__link" href="/pages/Login/index.html"}}Войти{{/link/link}}
     {{/form/form}}

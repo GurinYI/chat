@@ -1,8 +1,9 @@
 {{#> page/page title="Login"}}
     <link rel="stylesheet" href="page-login.scss" />
         {{#> form/form class="page_login page__center" header="Вход" h2=true}}
-            {{#> input/input type="text" id="inputLogin" placeholder="Логин"}}{{/input/input}}
-            {{#> input/input type="password" id="inputPassword" placeholder="Пароль"}}{{/input/input}}
+            {{#> headers/h2 class="form__header"}}{{header}}{{/headers/h2}}
+            {{#> form-input/form-input type="text" id="inputLogin" placeholder="Логин"}}{{/form-input/form-input}}
+            {{#> form-input/form-input type="password" id="inputPassword" placeholder="Пароль"}}{{/form-input/form-input}}
             {{#> button/button class="form__button" label="Авторизоваться"}}{{/button/button}}
             {{#> link/link class="form__link" href="/pages/Signin/index.html"}}Нет аккаунта?{{/link/link}}
         {{/form/form}}

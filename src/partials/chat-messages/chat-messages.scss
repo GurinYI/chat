@@ -1,0 +1,17 @@
+@import "/styles/colors";
+@import "/styles/mixins";
+
+.chat_messages{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  max-height: calc(100% - 107px);
+  @include scrollable;
+
+  &__date{
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: $color-gray;
+  }
+}

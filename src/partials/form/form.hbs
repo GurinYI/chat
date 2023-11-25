@@ -1,9 +1,4 @@
 <link rel="stylesheet" href="/partials/form/form.scss" />
 <form class="form {{class}}">
-    {{#if h2}}
-        {{#> headers/h2 class="form__header"}}{{header}}{{/headers/h2}}
-    {{else}}
-        {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
-    {{/if}}
     {{> @partial-block}}
 </form>

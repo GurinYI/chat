@@ -3,27 +3,32 @@
     <main class="modals">
 
         {{#> form/form header="Добавить пользователя" class="form__modal"}}
-            {{#> input/input type="text" placeholder="Логин"}}{{/input/input}}
+            {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
+            {{#> form-input/form-input type="text" placeholder="Логин"}}{{/form-input/form-input}}
             {{#> button/button class="form__button" label="Добавить"}}{{/button/button}}
         {{/form/form}}
 
         {{#> form/form header="Удалить пользователя" class="form__modal"}}
-            {{#> input/input type="text" placeholder="Логин"}}{{/input/input}}
+            {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
+            {{#> form-input/form-input type="text" placeholder="Логин"}}{{/form-input/form-input}}
             {{#> button/button class="form__button" label="Удалить"}}{{/button/button}}
         {{/form/form}}
 
         {{#> form/form header="Файл загружен" class="form__modal modal_upload"}}
+            {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
             <span class="modal_upload__chosen_file">pic.jpg</span>
             {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
         {{/form/form}}
 
         {{#> form/form header="Загрузите файл" class="form__modal modal_upload"}}
+            {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
             {{#> link/link href="#" class="link--underline modal_upload__choose_file"}}Выбрать файл на компьютере{{/link/link}}
             {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
             <span class="modal_upload__message">Нужно выбрать файл</span>
         {{/form/form}}
 
         {{#> form/form header="Ошибка, попробуйте ещё раз" class="form__modal modal_upload modal_error"}}
+            {{#> headers/h4 class="form__header modal_error__header"}}{{header}}{{/headers/h4}}
             {{#> link/link href="#" class="link--underline modal_upload__choose_file"}}Выбрать файл на компьютере{{/link/link}}
             {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
         {{/form/form}}

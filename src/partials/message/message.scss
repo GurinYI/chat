@@ -1,0 +1,26 @@
+@import "/styles/colors";
+.message{
+  border-radius: 10px;
+  background-color: $color-gray-3;
+  max-width: 40%;
+  padding: 11px;
+  margin-bottom:10px;
+  display: flex;
+  flex-direction: column;
+  &--outgoing{
+    @extend .message;
+    margin-left: auto;
+    background-color: $color-light-blue;
+  }
+  &__text{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+  }
+  &__time{
+    font-size: 9px;
+    line-height: 9px;
+    text-align: right;
+    color:$color-gray;
+  }
+}
