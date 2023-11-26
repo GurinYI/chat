@@ -11,3 +11,15 @@
     display: none;
   }
 }
+@mixin blue-circle($width){
+  width: $width;
+  height: $width;
+  cursor: pointer;
+  background-color: #3369f3;
+  border-radius: 50%;
+  font-size: 11px;
+  line-height: 12px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 10px;
+}

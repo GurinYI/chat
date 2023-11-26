@@ -34,15 +34,8 @@
     margin-bottom: 14px;
   }
   &__unread {
-    width: 20px;
-    height: 20px;
-    background-color: $color-blue;
-    border-radius: 50%;
+    @include blue-circle(20px);
     padding: 4px;
-    font-size: 11px;
-    line-height: 12px;
-    color: $color-white;
-    text-align: center;
   }
   &--active{
     background-color: $color-light-blue;

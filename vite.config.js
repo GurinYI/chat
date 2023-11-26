@@ -8,10 +8,17 @@ export default defineConfig({
   build: {
     rollupOptions:{
       input:{
-        index: resolve(__dirname,'index.html'),
-        404:resolve(__dirname,'src/pages/404/404.html')
+        index: resolve(__dirname,'src/index.html'),
+        404:resolve(__dirname,'src/pages/404/index.html'),
+        500:resolve(__dirname,'src/pages/500/index.html'),
+        Chat:resolve(__dirname,'src/pages/Chat/index.html'),
+        Login:resolve(__dirname,'src/pages/Login/index.html'),
+        Modals:resolve(__dirname,'src/pages/Modals/index.html'),
+        Profile:resolve(__dirname,'src/pages/Profile/index.html'),
+        Signin:resolve(__dirname,'src/pages/Signin/index.html'),
       }
-    }
+    },
+    outDir: '../dist'
   },
   plugins: [
     handlebars({

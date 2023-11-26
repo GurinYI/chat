@@ -1,0 +1,22 @@
+@import "/styles/colors";
+@import "/styles/mixins";
+.profile_page {
+  width: 40%;
+  margin: 0 auto;
+  height: 100%;
+  &__back {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 5%;
+    height: 100%;
+    background-color: $color-gray-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__back_button {
+    @include blue-circle(28px);
+  }
+}
