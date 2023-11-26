@@ -1,6 +1,6 @@
 @import "/styles/mixins";
-.page{
-  &__center{
+.page {
+  &__center {
     @include center;
     position: absolute;
     text-align: center;

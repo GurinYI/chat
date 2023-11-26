@@ -1,12 +1,12 @@
 @import "/styles/mixins";
 @import "/styles/colors";
 
-.search{
+.search {
   background-color: $color-gray-4;
   border-radius: 5px;
   width: 100%;
   position: relative;
-  &_input{
+  &_input {
     width: 100%;
     background-color: transparent;
     padding: 10px 10px 10px 34px;
@@ -14,17 +14,17 @@
       position: absolute;
       @include center;
     }
-    &:focus{
-      &::placeholder{
+    &:focus {
+      &::placeholder {
         opacity: 0;
       }
     }
   }
   &::before {
     display: block;
-    content: url('/images/search-icon.svg');
+    content: url("/images/search-icon.svg");
     position: absolute;
-    top:4px;
+    top: 4px;
     left: 10px;
   }
 }

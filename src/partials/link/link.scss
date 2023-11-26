@@ -1,23 +1,23 @@
 @import "src/styles/colors";
-.link{
+.link {
   text-decoration: none;
-  color:$color-blue;
+  color: $color-blue;
 
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
-  &--underline{
+  &--underline {
     @extend .link;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
     text-decoration: underline;
   }
-  &--gray{
+  &--gray {
     @extend .link;
     color: $color-gray;
   }
-  &--danger{
+  &--danger {
     @extend .link;
     color: $color-red;
   }

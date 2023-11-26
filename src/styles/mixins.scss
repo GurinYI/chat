@@ -1,9 +1,9 @@
-@mixin center{
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-@mixin scrollable{
+@mixin scrollable {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -11,7 +11,7 @@
     display: none;
   }
 }
-@mixin blue-circle($width){
+@mixin blue-circle($width) {
   width: $width;
   height: $width;
   cursor: pointer;

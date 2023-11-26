@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   width: 100%;
   height: 100%;
 }
@@ -15,7 +15,7 @@ body {
   height: 100%;
   font-family: "Inter", serif;
   font-size: 22px;
-  color:$color-black;
+  color: $color-black;
 }
 a {
   text-decoration: none;
@@ -25,10 +25,10 @@ ul,
 li {
   list-style: none;
 }
-input{
+input {
   border: none;
   outline: none;
 }
-button{
+button {
   border: 0;
 }
