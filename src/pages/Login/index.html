@@ -1,10 +1,12 @@
 {{#> page/page title="Login"}}
     <link rel="stylesheet" href="page-login.scss" />
-        {{#> form/form class="page_login page__center" header="Вход" h2=true}}
-            {{#> headers/h2 class="form__header"}}{{header}}{{/headers/h2}}
-            {{#> form-input/form-input type="text" placeholder="Логин"}}{{/form-input/form-input}}
-            {{#> form-input/form-input type="password" placeholder="Пароль"}}{{/form-input/form-input}}
-            {{#> button/button class="form__button" label="Авторизоваться"}}{{/button/button}}
-            {{#> link/link class="form__link" href="/pages/Signin/index.html"}}Нет аккаунта?{{/link/link}}
-        {{/form/form}}
+        <main>
+            {{#> form/form class="page_login page__center" header="Вход" h2=true}}
+                {{#> headers/h2 class="form__header"}}{{header}}{{/headers/h2}}
+                {{#> form-input/form-input type="text" placeholder="Логин" name="login"}}{{/form-input/form-input}}
+                {{#> form-input/form-input type="password" placeholder="Пароль" name="password"}}{{/form-input/form-input}}
+                {{#> form-button/form-button label="Добавить" id="add-user"}}{{/form-button/form-button}}
+                {{#> link/link class="form__link" href="/pages/Signin/index.html"}}Нет аккаунта?{{/link/link}}
+            {{/form/form}}
+        </main>
 {{/page/page}}

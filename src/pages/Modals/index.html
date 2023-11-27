@@ -4,33 +4,34 @@
 
         {{#> form/form header="Добавить пользователя" class="form__modal"}}
             {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
-            {{#> form-input/form-input type="text" placeholder="Логин"}}{{/form-input/form-input}}
-            {{#> button/button class="form__button" label="Добавить"}}{{/button/button}}
+            {{#> form-input/form-input type="text" placeholder="Логин" name="login"}}{{/form-input/form-input}}
+            {{#> form-button/form-button label="Добавить"}}{{/form-button/form-button}}
         {{/form/form}}
 
         {{#> form/form header="Удалить пользователя" class="form__modal"}}
             {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
-            {{#> form-input/form-input type="text" placeholder="Логин"}}{{/form-input/form-input}}
-            {{#> button/button class="form__button" label="Удалить"}}{{/button/button}}
+            {{#> form-input/form-input type="text" placeholder="Логин" name="login"}}{{/form-input/form-input}}
+            {{#> form-button/form-button label="Удалить"}}{{/form-button/form-button}}
         {{/form/form}}
 
         {{#> form/form header="Файл загружен" class="form__modal modal_upload"}}
             {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
             <span class="modal_upload__chosen_file">pic.jpg</span>
-            {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
+            {{#> form-button/form-button label="Поменять"}}{{/form-button/form-button}}
         {{/form/form}}
 
         {{#> form/form header="Загрузите файл" class="form__modal modal_upload"}}
             {{#> headers/h4 class="form__header"}}{{header}}{{/headers/h4}}
-            {{#> link/link href="#" class="link--underline modal_upload__choose_file"}}Выбрать файл на компьютере{{/link/link}}
-            {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
+            <input type="file" class="link--underline modal_upload__choose_file" name="avatar" id="avatar" hidden>
+            <label class="link--underline modal_upload__choose_file" for="avatar">Выбрать файл на компьютере</label>
+            {{#> form-button/form-button label="Поменять"}}{{/form-button/form-button}}
             <span class="modal_upload__message">Нужно выбрать файл</span>
         {{/form/form}}
 
         {{#> form/form header="Ошибка, попробуйте ещё раз" class="form__modal modal_upload modal_error"}}
             {{#> headers/h4 class="form__header modal_error__header"}}{{header}}{{/headers/h4}}
             {{#> link/link href="#" class="link--underline modal_upload__choose_file"}}Выбрать файл на компьютере{{/link/link}}
-            {{#> button/button class="form__button" label="Поменять"}}{{/button/button}}
+            {{#> form-button/form-button label="Поменять"}}{{/form-button/form-button}}
         {{/form/form}}
     </main>
 {{/page/page}}
