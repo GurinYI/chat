@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/partials/user-profile/user-profile.scss" />
-<div class="user_profile">
+<form class="user_profile">
     <div class="user_profile__avatar"></div>
     {{#> headers/h3 class="user_profile__name"}}Иван{{/headers/h3}}
     {{#> profile-input/profile-input label="Почта" placeholder="pochta@yandex.ru" type="email" name="email"}}{{/profile-input/profile-input}}
@@ -13,4 +13,4 @@
         {{#> link/link class="user_profile__link" href="#"}}Изменить пароль{{/link/link}}
         {{#> link/link class="user_profile__link" danger=true href="/pages/Login/index.html"}}Выйти{{/link/link}}
     </div>
-</div>
+</form>
