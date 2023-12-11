@@ -1,0 +1,22 @@
+.form {
+  width: 17.71%;
+  border-radius: 12px;
+  box-shadow: 0 0 6px 0 #00000024;
+  padding: 50px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  &__header {
+    margin-bottom: 50px;
+  }
+  &__link {
+    font-size: 11px;
+    line-height: 11px;
+    margin-top:10px;
+  }
+
+  &__modal {
+    padding: 40px 30px;
+  }
+}

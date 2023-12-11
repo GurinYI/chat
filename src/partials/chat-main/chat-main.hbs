@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/partials/chat-main/chat-main.scss" />
+<section class="chat_main">
+    {{#if activeChat}}
+        {{#> companion/companion name=activeChat.name}}{{/companion/companion}}
+        {{#> chat-messages/chat-messages messages=activeChat.messages}}{{/chat-messages/chat-messages}}
+
+        {{#> chat-input/chat-input}}{{/chat-input/chat-input}}
+    {{else}}
+        <span class="chat_main__stub">Выберите чат чтобы отправить сообщение</span>
+    {{/if}}
+</section>

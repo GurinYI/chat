@@ -1,0 +1,17 @@
+{{#> page/page title="Signin"}}
+    <link rel="stylesheet" href="page-signin.scss" />
+    <main>
+        {{#> form/form class="page_signin page__center" header="Регистрация" h2=true}}
+            {{#> headers/h2 class="form__header"}}{{header}}{{/headers/h2}}
+            {{#> form-input/form-input type="email" placeholder="Почта" name="email"}}{{/form-input/form-input}}
+            {{#> form-input/form-input type="text" placeholder="Логин" name="login"}}{{/form-input/form-input}}
+            {{#> form-input/form-input type="text" placeholder="Имя" name="first_name"}}{{/form-input/form-input}}
+            {{#> form-input/form-input type="text" placeholder="Фамилия" name="second_name"}}{{/form-input/form-input}}
+            {{#> form-input/form-input type="tel" placeholder="Телефон" name="phone"}}{{/form-input/form-input}}
+            {{#> form-input/form-input type="password" placeholder="Пароль" name="password"}}{{/form-input/form-input}}
+            {{#> form-input/form-input type="password" placeholder="Пароль (ещё раз)"}}{{/form-input/form-input}}
+            {{#> form-button/form-button label="Зарегистрироваться"}}{{/form-button/form-button}}
+            {{#> link/link class="form__link" href="/pages/Login/index.html"}}Войти{{/link/link}}
+        {{/form/form}}
+    </main>
+{{/page/page}}

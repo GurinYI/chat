@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/partials/chat-item/chat-item.scss" />
+<li class="chat_item {{#if chat.isActive}}chat_item--active{{/if}}">
+  <div class="chat_item__image"></div>
+  <div class="chat_item__container">
+    <span class="chat_item__author">
+      {{chat.name}}
+    </span>
+    <span class="chat_item__message">
+      {{#if chat.yourMessageLast}}
+          <span class="chat_item__message--yours">Вы: </span>
+      {{/if}}
+      {{chat.lastMessage}}
+    </span>
+  </div>
+  <div class="chat_item__container">
+    <span class="chat_item__date">
+      {{chat.time}}
+    </span>
+    {{#if chat.unread}}
+      <div class="chat_item__unread">
+        {{chat.unread}}
+      </div>
+    {{/if}}
+
+  </div>
+
+</li>

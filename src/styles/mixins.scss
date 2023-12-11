@@ -1,0 +1,25 @@
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin scrollable {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@mixin blue-circle($width) {
+  width: $width;
+  height: $width;
+  cursor: pointer;
+  background-color: #3369f3;
+  border-radius: 50%;
+  font-size: 11px;
+  line-height: 12px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 10px;
+}
