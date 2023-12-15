@@ -1,9 +1,6 @@
 <div>
   <h1>Home page</h1>
-  {{#Card}}
-    {{{Button ref="button" label=buttonLabel onClick=onButtonClick}}}
-    {{#each buttons}}
-      {{{Button label=this.label type=../type onClick=this.onClick}}}
+    {{#each links}}
+      {{{Button label=this.label href=this.href onClick=this.onClick}}}
     {{/each}}
-  {{/Card}}
 </div>

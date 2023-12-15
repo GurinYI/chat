@@ -7,7 +7,7 @@ import { Button } from "./components/Button";
 
 registerComponent('Button', Button);
 registerComponent('Card', Card);
-// registerComponent('Card', Card);
+
 
 window.addEventListener('DOMContentLoaded', () => {
   render('home')

@@ -1,22 +1,17 @@
-import Block from '../../utils/Block';
-import template from './button.hbs';
+import Block from "../../utils/Block";
+import template from "./button.hbs";
 
-interface ButtonProps {
+interface LinkProps {
   label: string;
-  type?: 'submit' | 'button',
-  onClick?: () => void;
-  events: {
-    click: () => void;
-  };
+  href: string;
+  danger?: boolean;
+  class: string;
 }
 
 export class Button extends Block {
-  constructor(props: ButtonProps) {
+  constructor(props: LinkProps) {
     super({
       ...props,
-      events: {
-        click: props.onClick
-      }
     });
   }
 

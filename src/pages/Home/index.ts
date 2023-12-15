@@ -8,14 +8,34 @@ export class HomePage extends Block {
     super({
       type: 'button',
 
-      buttons: [
+      links: [
         {
-          label: 'Login', onClick: () => {
-            render('home');
-          }
+          label: '404',
+          href: '/404'
         },
         {
-          label: 'Button 2'
+          label: '500',
+          href: '/500'
+        },
+        {
+          label: 'chat',
+          href: '/chat'
+        },
+        {
+          label: 'login',
+          href: '/login'
+        },
+        {
+          label: 'modals',
+          href: '/modals'
+        },
+        {
+          label: 'profile',
+          href: '/profile'
+        },
+        {
+          label: 'signin',
+          href: '/signin'
         },
       ]
     });
