@@ -38,7 +38,7 @@ Modals: https://incredible-faun-ca2693.netlify.app/pages/modals/
 
 ## Запуск по адресу http://localhost:3000/ 
 
-1. Запустить скирпт
+1. Запустить скрипт
 
 ```shell
 npm run build
