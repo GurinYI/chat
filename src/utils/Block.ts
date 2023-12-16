@@ -53,10 +53,12 @@ class Block {
   }
 
   _addEvents() {
-    const { events = {} } = this.props as { events: Record<string, () => void> };
-    const objectKeys: string[] = Object.keys(events)
-    objectKeys.forEach(eventName  => {
-      if (this._element){
+    const { events = {} } = this.props as {
+      events: Record<string, () => void>;
+    };
+    const objectKeys: string[] = Object.keys(events);
+    objectKeys.forEach((eventName) => {
+      if (this._element) {
         // @ts-ignore
         this._element.addEventListener(eventName, events[eventName]);
       }
@@ -92,14 +94,11 @@ class Block {
     );
   }
 
-  private _componentDidUpdate(oldProps: any, newProps: any) {
-    if (this.componentDidUpdate(oldProps, newProps)) {
-      this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
-    }
+  private _componentDidUpdate() {
+    this.eventBus().emit(Block.EVENTS.FLOW_RENDER);
   }
 
   protected componentDidUpdate(oldProps: any, newProps: any) {
-
     return JSON.stringify(oldProps) === JSON.stringify(newProps);
   }
 
@@ -163,13 +162,11 @@ class Block {
         return typeof value === "function" ? value.bind(target) : value;
       },
       set(target, prop, value) {
-        const oldTarget = { ...target };
-
         target[prop] = value;
 
         // Запускаем обновление компоненты
         // Плохой cloneDeep, в следующей итерации нужно заставлять добавлять cloneDeep им самим
-        self.eventBus().emit(Block.EVENTS.FLOW_CDU, oldTarget, target);
+        self.eventBus().emit(Block.EVENTS.FLOW_CDU);
         return true;
       },
       deleteProperty() {
