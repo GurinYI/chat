@@ -103,6 +103,9 @@
     "lib": [
       "ESNext",
       "DOM",
+      "es2019",
+      "dom",
+      "dom.iterable"
     ]
   }
 }

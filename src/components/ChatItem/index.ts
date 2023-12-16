@@ -1,18 +1,17 @@
-import Block from "../../utils/Block";
-import template from "../ChatItem/chat-item.hbs";
-import { render } from "../../utils/render"
-import { Chat } from "../../types/types";
+import Block from '../../utils/Block';
+import template from './chat-item.hbs';
+import { Chat } from '../../types/types';
 
 interface ChatProps {
   chat: Chat;
 }
 export class ChatItem extends Block {
-
   constructor(props: ChatProps) {
     super({
-      ...props
+      ...props,
     });
   }
+
   render() {
     return this.compile(template, this.props);
   }

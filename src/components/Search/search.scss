@@ -6,20 +6,25 @@
   border-radius: 5px;
   width: 100%;
   position: relative;
+
   &_input {
     width: 100%;
     background-color: transparent;
     padding: 10px 10px 10px 34px;
+
     &::placeholder {
       position: absolute;
+
       @include center;
     }
+
     &:focus {
       &::placeholder {
         opacity: 0;
       }
     }
   }
+
   &::before {
     display: block;
     content: url("/images/search-icon.svg");

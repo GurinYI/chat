@@ -1,5 +1,5 @@
-import Block from "../../utils/Block";
-import template from "../ChatInput/chat-input.hbs";
+import Block from '../../utils/Block';
+import template from './chat-input.hbs';
 
 export class ChatInput extends Block {
   render() {

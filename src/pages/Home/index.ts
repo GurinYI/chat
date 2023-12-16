@@ -1,50 +1,51 @@
-import Block from "../../utils/Block";
-import template from "./home.hbs";
-import { render } from "../../utils/render";
+import Block from '../../utils/Block';
+import template from './home.hbs';
+import { render } from '../../utils/render';
+
 export class HomePage extends Block {
   constructor() {
     super({
       links: [
         {
-          label: "404",
+          label: '404',
           onClick: () => {
-            render("404");
+            render('404');
           },
         },
         {
-          label: "500",
+          label: '500',
           onClick: () => {
-            render("500");
+            render('500');
           },
         },
         {
-          label: "chat",
+          label: 'chat',
           onClick: () => {
-            render("chat");
+            render('chat');
           },
         },
         {
-          label: "login",
+          label: 'login',
           onClick: () => {
-            render("login");
+            render('login');
           },
         },
         {
-          label: "modals",
+          label: 'modals',
           onClick: () => {
-            render("modals");
+            render('modals');
           },
         },
         {
-          label: "profile",
+          label: 'profile',
           onClick: () => {
-            render("profile");
+            render('profile');
           },
         },
         {
-          label: "signin",
+          label: 'signin',
           onClick: () => {
-            render("signin");
+            render('signin');
           },
         },
       ],

@@ -1,36 +1,4 @@
-@import "/styles/colors";
-.form_input_container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  position: relative;
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-  &__input {
-    padding-bottom: 7px;
-    border-bottom: 1px solid #3369f3;
-  }
-  &__placeholder {
-    font-size: 13px;
-    line-height: 9px;
-    text-align: left;
-    color: $color-gray;
-    position: absolute;
-    margin: 6px 0;
-    padding: 0 4px;
-    display: flex;
-    align-items: center;
-    top: 0;
-    left: 0;
-    transition: all 0.2s;
-    transform-origin: 0 0;
-    pointer-events: none;
-  }
-}
-
-.form_input_container input:focus + .form_input_container__placeholder {
-  transform: translateY(-20px);
-  font-size: 9px;
+.form_input {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #3369f3;
 }

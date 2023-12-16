@@ -1,24 +1,24 @@
 <main class="modals">
     {{#Form class="form__modal"}}
-        <h4 class="h4 form__header">Добавить пользователя</h4>
-        {{{FormInput type="text" placeholder="Логин" name="login"}}}
+        <h4 class="form__header">Добавить пользователя</h4>
+        {{{FormInputContainer type="text" placeholder="Логин" name="login"}}}
         {{{FormButton label="Добавить"}}}
     {{/Form}}
 
     {{#Form class="form__modal"}}
-        <h4 class="h4 form__header">Удалить пользователя</h4>
-        {{{FormInput type="text" placeholder="Логин" name="login"}}}
+        <h4 class="form__header">Удалить пользователя</h4>
+        {{{FormInputContainer type="text" placeholder="Логин" name="login"}}}
         {{{FormButton label="Удалить"}}}
     {{/Form}}
 
     {{#Form class="form__modal modal_upload"}}
-        <h4 class="h4 form__header">Файл загружен</h4>
+        <h4 class="form__header">Файл загружен</h4>
         <span class="modal_upload__chosen_file">pic.jpg</span>
         {{{FormButton label="Поменять"}}}
     {{/Form}}
 
     {{#Form class="form__modal modal_upload"}}
-       <h4 class="h4 form__header">Загрузите файл</h4>
+       <h4 class="form__header">Загрузите файл</h4>
         <input type="file" class="link--underline modal_upload__choose_file" name="avatar" id="avatar" hidden>
         <label class="link--underline modal_upload__choose_file" for="avatar">Выбрать файл на компьютере</label>
         {{{FormButton label="Поменять"}}}
@@ -26,7 +26,7 @@
     {{/Form}}
 
     {{#Form class="form__modal modal_upload modal_error"}}
-        <h4 class="h4 form__header">Ошибка, попробуйте ещё раз</h4>
+        <h4 class="form__header">Ошибка, попробуйте ещё раз</h4>
         <input type="file" class="link--underline modal_upload__choose_file" name="avatar" id="avatar" hidden>
         <label class="link--underline modal_upload__choose_file" for="avatar">Выбрать файл на компьютере</label>
         {{{FormButton label="Поменять"}}}

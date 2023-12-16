@@ -1,4 +1,5 @@
 @import "src/styles/colors";
+
 .link {
   text-decoration: none;
   color: $color-blue;
@@ -7,19 +8,25 @@
   &:hover {
     text-decoration: underline;
   }
+
   &--underline {
-    @extend .link;
+    color: $color-blue;
+    cursor: pointer;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
     text-decoration: underline;
   }
+
   &--gray {
-    @extend .link;
+    text-decoration: none;
+    cursor: pointer;
     color: $color-gray;
   }
+
   &--danger {
-    @extend .link;
+    text-decoration: none;
+    cursor: pointer;
     color: $color-red;
   }
 }

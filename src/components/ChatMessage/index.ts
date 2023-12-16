@@ -15,7 +15,7 @@ export class ChatMessage extends Block {
   }
 
   render() {
-    console.log(this.props)
+    console.log(this.props);
     return this.compile(template, this.props);
   }
 }

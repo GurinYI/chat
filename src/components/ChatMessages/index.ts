@@ -1,6 +1,6 @@
 import Block from '../../utils/Block';
 import template from './chat-messages.hbs';
-import { Message } from "../../types/types";
+import { Message } from '../../types/types';
 
 interface ChatMessagesProps {
   messages: Message[]

@@ -8,9 +8,8 @@
 @import "./ChatMessages/chat-messages";
 @import "./ChatInput/chat-input";
 @import "./ChatMessage/chat-message";
-@import "./Form/form";
 @import "./FormButton/form-button";
-@import "./FormInput/form-input";
+@import "FormInputContainer/form-input-container";
+@import "FormInput/form-input";
 @import "./UserProfile/user-profile";
 @import "./ProfileInput/profile-input";
-@import "headers";

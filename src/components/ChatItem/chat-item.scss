@@ -1,5 +1,6 @@
 @import "/styles/colors";
 @import "/styles/mixins";
+
 .chat_item {
   border-top: 1px solid $color-gray-4;
   padding: 12px 10px;
@@ -7,36 +8,44 @@
   display: grid;
   grid-template-columns: 47px 1fr 25px;
   column-gap: 10px;
+
   &__image {
     width: 47px;
     height: 47px;
     border-radius: 50%;
     background-color: $color-gray-4;
   }
+
   &__container {
     display: flex;
     flex-direction: column;
   }
+
   &__author {
     font-size: 13px;
     font-weight: 600;
     line-height: 13px;
   }
+
   &__message {
     color: $color-gray;
     font-size: 12px;
     line-height: 15px;
   }
+
   &__date {
     color: $color-gray;
     font-size: 9px;
     line-height: 13px;
     margin-bottom: 14px;
   }
+
   &__unread {
     @include blue-circle(20px);
+
     padding: 4px;
   }
+
   &--active {
     background-color: $color-light-blue;
   }

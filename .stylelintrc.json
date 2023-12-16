@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z]+(_[a-z0-9]+|__[a-z]+)*$",
+      {
+        "message": "Имя класса не соответствует заданному паттерну"
+      }
+    ]
+  }
+}

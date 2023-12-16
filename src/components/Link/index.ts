@@ -1,5 +1,5 @@
-import Block from "../../utils/Block";
-import template from "./link.hbs";
+import Block from '../../utils/Block';
+import template from './link.hbs';
 
 interface LinkProps {
   label: string;
@@ -14,8 +14,8 @@ export class Link extends Block {
     super({
       ...props,
       events: {
-        click: props.onClick
-      }
+        click: props.onClick,
+      },
     });
   }
 

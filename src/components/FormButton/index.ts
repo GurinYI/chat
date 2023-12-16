@@ -1,5 +1,5 @@
-import Block from "../../utils/Block";
-import template from "./form-button.hbs";
+import Block from '../../utils/Block';
+import template from './form-button.hbs';
 
 interface FormButtonProps {
   label: string;

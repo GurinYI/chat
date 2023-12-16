@@ -6,6 +6,7 @@
   flex-direction: column;
   margin-top: 10px;
   max-height: calc(100% - 107px);
+
   @include scrollable;
 
   &__date {

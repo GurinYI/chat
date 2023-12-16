@@ -1,26 +1,32 @@
 @import "/styles/colors";
+
 .profile_input_container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding-top: 10px;
+
   &:not(:last-child) {
     padding-bottom: 10px;
     border-bottom: 1px solid $color-gray-4;
   }
+
   &:last-child {
     margin-bottom: 60px;
   }
+
   &__label {
     font-size: 13px;
     line-height: 13px;
   }
+
   &__input {
     &::placeholder {
       text-align: end;
       font-size: 13px;
       line-height: 13px;
     }
+
     &:disabled {
       background-color: transparent;
     }
