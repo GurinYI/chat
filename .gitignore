@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+.stylelintrc.json
+.nvmrc
+.eslintrc.cjs
+.eslintignore
 
 # Editor directories and files
 .vscode/*
