@@ -1,0 +1,14 @@
+<main>
+    {{#Form class="page_signin center" header="Регистрация"}}
+        <h2 class="h2 form__header">Регистрация</h2>
+        {{{FormInput type="email" placeholder="Почта" name="email"}}}
+        {{{FormInput type="text" placeholder="Логин" name="login"}}}
+        {{{FormInput type="text" placeholder="Имя" name="first_name"}}}
+        {{{FormInput type="text" placeholder="Фамилия" name="second_name"}}}
+        {{{FormInput type="tel" placeholder="Телефон" name="phone"}}}
+        {{{FormInput type="password" placeholder="Пароль" name="password"}}}
+        {{{FormInput type="password" placeholder="Пароль (ещё раз)"}}}
+        {{{FormButton label="Зарегистрироваться"}}}
+        {{{Link class="form__link" onClick=back label="Назад"}}}
+    {{/Form}}
+</main>

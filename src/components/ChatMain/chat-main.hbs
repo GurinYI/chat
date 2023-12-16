@@ -1,0 +1,9 @@
+<section class="chat_main">
+    {{#if activeChat}}
+      {{{Companion name=activeChat.name}}}
+      {{{ChatMessages messages=activeChat.messages}}}
+      {{{ChatInput}}}
+    {{else}}
+        <span class="chat_main__stub">Выберите чат чтобы отправить сообщение</span>
+    {{/if}}
+</section>
