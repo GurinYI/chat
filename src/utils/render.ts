@@ -9,8 +9,8 @@ import { ModalsPage } from '../pages/Modals';
 
 const ROUTES = {
   home: HomePage,
-  404: Page404,
-  500: Page500,
+  "404": Page404,
+  "500": Page500,
   chat: ChatPage,
   login: LoginPage,
   modals: ModalsPage,

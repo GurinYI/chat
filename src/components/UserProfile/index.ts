@@ -1,12 +1,12 @@
-import Block from '../../utils/Block';
-import template from './user-profile.hbs';
-import { render } from '../../utils/render';
+import Block from "../../utils/Block";
+import template from "./user-profile.hbs";
+import { render } from "../../utils/render";
 
 export class UserProfile extends Block {
   constructor() {
     super({
       back: () => {
-        render('home');
+        render("home");
       },
     });
   }
@@ -15,3 +15,4 @@ export class UserProfile extends Block {
     return this.compile(template, this.props);
   }
 }
+
