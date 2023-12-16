@@ -1,0 +1,25 @@
+@import "/styles/colors";
+@import "/styles/mixins";
+
+.chats {
+  width: 25%;
+  height: 100%;
+  background-color: $color-gray-3;
+  padding: 21px 0 0;
+  border-right: 1px solid $color-gray-4;
+
+  &__interface {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 23px;
+    margin-bottom: 14px;
+    padding: 0 10px;
+  }
+
+  &__list {
+    max-height: calc(100% - 107px);
+
+    @include scrollable;
+  }
+}

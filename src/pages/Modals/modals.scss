@@ -1,19 +1,23 @@
 @import "/styles/colors";
+
 .modals {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 .modal_upload {
   &__choose_file {
     max-width: 50%;
     margin: 0 auto 43px;
   }
+
   &__chosen_file {
     color: $color-gray-2;
     font-size: 14px;
     line-height: 16px;
   }
+
   &__message {
     color: $color-red-2;
     font-size: 11px;
@@ -21,6 +25,7 @@
     margin-top:10px;
   }
 }
+
 .modal_error {
   &__header {
     color: $color-red-2;
