@@ -12,7 +12,7 @@ class Block {
 
   public id = nanoid(6);
 
-  protected props: any;
+  public props: Record<string, unknown>;
 
   protected refs: Record<string, Block> = {};
 
@@ -63,6 +63,16 @@ class Block {
         this._element.addEventListener(eventName, events[eventName]);
       }
     });
+  }
+
+  private _removeEvents() {
+    const { events = {} } = this.props as {events: Record<string, () => void>};
+    if (this._element) {
+      Object.keys(events).forEach((eventName) => {
+        // @ts-ignore
+        (this._element as HTMLElement).removeEventListener(eventName, events[eventName]);
+      });
+    }
   }
 
   _registerEvents(eventBus: EventBus) {
@@ -116,7 +126,7 @@ class Block {
 
   private _render() {
     const fragment = this.render();
-
+    this._removeEvents();
     const newElement = fragment.firstElementChild as HTMLElement;
 
     if (this._element) {
