@@ -1,8 +1,8 @@
 <main>
     {{#Form class="page_login center"}}
         <h2 class="form__header">Вход</h2>
-        {{{FormInputContainer type="text" placeholder="Логин" name="login"}}}
-        {{{FormInputContainer type="password" placeholder="Пароль" name="password"}}}
+        {{{FormInputContainer type="text" placeholder="Логин" name="login" error="от 3 до 20 символов, латиница, может содержать цифры, но не состоять из них, без пробелов, без спецсимволов (допустимы дефис и нижнее подчёркивание)"}}}
+        {{{FormInputContainer type="password" placeholder="Пароль" name="password" error="от 8 до 40 символов, обязательно хотя бы одна заглавная буква и цифра"}}}
         {{{FormButton label="Добавить" id="add-user"}}}
         {{{Link class="form__link" onClick=back label="Назад"}}}
     {{/Form}}

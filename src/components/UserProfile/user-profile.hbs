@@ -1,14 +1,14 @@
 <form class="user_profile">
     <div class="user_profile__avatar"></div>
     <h3 class="user_profile__name">Иван</h3>
-    {{{ProfileInput label="Почта" placeholder="pochta@yandex.ru" type="email" name="email"}}}
-    {{{ProfileInput label="Логин" placeholder="ivanivanov" type="text" name="login"}}}
-    {{{ProfileInput label="Имя" placeholder="Иван" type="text" name="first_name"}}}
-    {{{ProfileInput label="Фамилия" placeholder="Иванов" type="text" name="second_name"}}}
-    {{{ProfileInput label="Имя в чате" placeholder="Иван" type="text" name="display_name"}}}
-    {{{ProfileInput label="Телефон" placeholder="+7 (909) 967 30 30" name="phone" type="tel"}}}
+    {{{ProfileInputContainer label="Почта" placeholder="pochta@yandex.ru" type="email" name="email" error="латиница, может включать цифры и спецсимволы вроде дефиса и подчёркивания, обязательно должна быть «собака» (@) и точка после неё, но перед точкой обязательно должны быть буквы."}}}
+    {{{ProfileInputContainer label="Логин" placeholder="ivanivanov" type="text" name="login" error="от 3 до 20 символов, латиница, может содержать цифры, но не состоять из них, без пробелов, без спецсимволов (допустимы дефис и нижнее подчёркивание)"}}}
+    {{{ProfileInputContainer label="Имя" placeholder="Иван" type="text" name="first_name" error="латиница или кириллица, первая буква должна быть заглавной, без пробелов и без цифр, нет спецсимволов (допустим только дефис)"}}}
+    {{{ProfileInputContainer label="Фамилия" placeholder="Иванов" type="text" name="second_name" error="латиница или кириллица, первая буква должна быть заглавной, без пробелов и без цифр, нет спецсимволов (допустим только дефис)"}}}
+    {{{ProfileInputContainer label="Имя в чате" placeholder="Иван" type="text" name="display_name"}}}
+    {{{ProfileInputContainer label="Телефон" placeholder="+7 (909) 967 30 30" name="phone" type="tel" error=" от 10 до 15 символов, состоит из цифр, может начинается с плюса"}}}
     <div class="user_profile__link_container">
-    {{{Link class="user_profile__link" label="Изменить данные"}}}
+    {{{Link class="user_profile__link" label="Изменить данные" onClick=submit}}}
     {{{Link class="user_profile__link" label="Изменить пароль"}}}
     {{{Link class="user_profile__link" danger=true label="Выйти" onClick=back}}}
     </div>

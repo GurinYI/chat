@@ -1,6 +1,6 @@
-import Block from '../../utils/Block';
-import template from './form.hbs';
-import { validate } from '../../utils/validate';
+import Block from "../../utils/Block";
+import template from "./form.hbs";
+import { validate } from "../../utils/validate";
 
 interface FormProps {
   class: string;
@@ -13,14 +13,18 @@ const handleFormSubmit = (e: Event) => {
   const formData: FormData = new FormData(form);
 
   const formObject = Object.fromEntries(formData);
-  let validFormData: boolean | void = true;
-  for (const formField in formObject) {
-    if (validFormData) {
-      validFormData = validate(formField, String(formObject[formField]));
-    }
-  }
+  let invalidDataCount: number = 0;
+  const inputContainers = Array.from(
+    form.querySelectorAll(".form_input_container"),
+  );
 
-  if (validFormData) {
+  inputContainers.forEach((inputContainer) => {
+    if (!validate(inputContainer)) {
+      invalidDataCount++;
+    }
+  });
+
+  if (!invalidDataCount) {
     console.log(formObject);
   }
 };

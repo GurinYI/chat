@@ -1,16 +1,15 @@
 import Block from '../../utils/Block';
-import template from './form-input-container.hbs';
+import template from './profile-input-container.hbs';
 
-interface FormInputContainerProps {
+interface ProfileInputContainerProps {
   type: string;
   name: string;
   placeholder: string;
-  events: { change: () => void };
   error: string;
 }
 
-export class FormInputContainer extends Block {
-  constructor(props: FormInputContainerProps) {
+export class ProfileInputContainer extends Block {
+  constructor(props: ProfileInputContainerProps) {
     super({
       ...props,
     });
