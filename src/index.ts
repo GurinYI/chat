@@ -15,6 +15,8 @@ import { FormInputContainer } from './components/FormInputContainer';
 import { FormInput } from './components/FormInput';
 import { UserProfile } from './components/UserProfile';
 import { ProfileInput } from './components/ProfileInput';
+import { ProfileInputContainer } from './components/ProfileInputContainer';
+import { FormInputError } from './components/FormInputError';
 
 registerComponent('Link', Link);
 registerComponent('Chats', Chats);
@@ -29,8 +31,11 @@ registerComponent('Form', Form);
 registerComponent('FormButton', FormButton);
 registerComponent('FormInput', FormInput);
 registerComponent('FormInputContainer', FormInputContainer);
+registerComponent('FormInputError', FormInputError);
 registerComponent('UserProfile', UserProfile);
 registerComponent('ProfileInput', ProfileInput);
+registerComponent('ProfileInputContainer', ProfileInputContainer);
+
 
 window.addEventListener('DOMContentLoaded', () => {
   render('home');
