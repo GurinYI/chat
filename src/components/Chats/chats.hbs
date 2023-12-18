@@ -1,0 +1,13 @@
+<aside class="chats">
+  <div class="chats__interface">
+    {{{Link label="Назад" onClick=back class="link--gray"}}}
+    {{{Search}}}
+  </div>
+  {{#if chats.length}}
+    <ul class="chats__list">
+      {{#each chats}}
+        {{{ChatItem chat=this}}}
+      {{/each}}
+    </ul>
+  {{/if}}
+</aside>

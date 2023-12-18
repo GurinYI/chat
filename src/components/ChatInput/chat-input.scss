@@ -1,0 +1,26 @@
+@import "/styles/colors";
+@import "/styles/mixins";
+
+.chat_input {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid $color-gray-4;
+  padding-top: 10px;
+
+  &__add_file {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__message {
+    background-color: $color-gray-4;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  &__send {
+    @include blue-circle(28px);
+  }
+}

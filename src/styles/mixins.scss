@@ -3,14 +3,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 @mixin scrollable {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
 }
+
 @mixin blue-circle($width) {
   width: $width;
   height: $width;
@@ -19,7 +22,7 @@
   border-radius: 50%;
   font-size: 11px;
   line-height: 12px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   margin-left: 10px;
 }

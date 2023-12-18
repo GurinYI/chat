@@ -1,0 +1,10 @@
+<section class="chat_messages">
+    {{#if messages.length}}
+        <span class="chat_messages__date">19 июня</span>
+        <ul>
+            {{#each messages}}
+                {{{ChatMessage text=this.text outgoing=this.outgoing time=this.time}}}
+            {{/each}}
+        </ul>
+    {{/if}}
+</section>

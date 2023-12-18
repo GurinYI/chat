@@ -1,0 +1,11 @@
+.form_input_error{
+  color:red;
+  display: none;
+  font-size: 8px;
+  width: 100%;
+  text-align: right;
+}
+
+.form_input_error.active{
+  display: block;
+}

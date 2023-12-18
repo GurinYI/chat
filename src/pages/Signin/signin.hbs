@@ -1,0 +1,14 @@
+<main>
+    {{#Form class="page_signin center" header="Регистрация"}}
+        <h2 class="form__header">Регистрация</h2>
+        {{{FormInputContainer type="email" placeholder="Почта" name="email" error="латиница, может включать цифры и спецсимволы вроде дефиса и подчёркивания, обязательно должна быть «собака» (@) и точка после неё, но перед точкой обязательно должны быть буквы"}}}
+        {{{FormInputContainer type="text" placeholder="Логин" name="login" error="от 3 до 20 символов, латиница, может содержать цифры, но не состоять из них, без пробелов, без спецсимволов (допустимы дефис и нижнее подчёркивание)"}}}
+        {{{FormInputContainer type="text" placeholder="Имя" name="first_name" error="латиница или кириллица, первая буква должна быть заглавной, без пробелов и без цифр, нет спецсимволов (допустим только дефис)"}}}
+        {{{FormInputContainer type="text" placeholder="Фамилия" name="second_name" error="латиница или кириллица, первая буква должна быть заглавной, без пробелов и без цифр, нет спецсимволов (допустим только дефис)"}}}
+        {{{FormInputContainer type="tel" placeholder="Телефон" name="phone" error="от 10 до 15 символов, состоит из цифр, может начинается с плюса"}}}
+        {{{FormInputContainer type="password" placeholder="Пароль" name="password" error="от 8 до 40 символов, обязательно хотя бы одна заглавная буква и цифра"}}}
+        {{{FormInputContainer type="password" placeholder="Пароль (ещё раз)" error="от 8 до 40 символов, обязательно хотя бы одна заглавная буква и цифра"}}}
+        {{{FormButton label="Зарегистрироваться"}}}
+        {{{Link class="form__link" onClick=back label="Назад"}}}
+    {{/Form}}
+</main>
